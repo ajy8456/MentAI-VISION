@@ -27,15 +27,17 @@
             text-align: center;
 
             /* --- 🎨 백그라운드 이미지 설정 --- */
-
             /* 1. 이미지 URL: 'your-background-image.jpg'를 실제 이미지 경로로 변경하세요. */
             /* 2. 어두운 오버레이: linear-gradient()는 이미지를 어둡게 만들어 흰 글씨가 잘 보이게 합니다. 
-               (0.5는 투명도. 0.3으로 하면 더 밝게, 0.7로 하면 더 어둡게 보입니다.) */
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('header_background.png');
+                (0.5는 투명도. 0.3으로 하면 더 밝게, 0.7로 하면 더 어둡게 보입니다.) */
+            
+            /* 'background_header.png'로 경로 수정 */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background_header.png');
+            
             /* 3. 이미지 크기: 헤더 영역을 꽉 채우도록 설정 (cover) */
             background-size: cover;
             /* 4. 이미지 위치: 이미지를 가운데 정렬 */
-            background-position: center center;            
+            background-position: center center;
             /* 5. 이미지 반복: 이미지가 반복되지 않도록 설정 */
             background-repeat: no-repeat;
             /* 6. (선택사항) 텍스트 그림자: 글자가 더 잘 보이게 함 */
@@ -175,7 +177,7 @@
             background-color: #333;
             color: #aaa;
             margin-top: 2rem;
-        }        
+        }
     </style>
 </head>
 <body>
@@ -186,66 +188,23 @@
     </header>
 
     <nav>
-        <a href="#overview">Overview</a>
-        <a href="#promo">홍보 영상</a>
-        <a href="#demo">서비스 시연</a>
-        <a href="#details">세부 설명</a>
-        <a href="#tech">기술</a>
+        <a href="#overview">Overview & 영상</a>
+        <a href="#details">세부 설명</a> <a href="#demo">서비스 시연</a> <a href="#tech">기술</a>
         <a href="#benefits">기대효과</a>
     </nav>
 
     <main>
         <section id="overview">
-            <h2>✨ Overview (서비스 개요)</h2>
+            <h2>✨ Overview & 홍보 영상</h2>
             <p>
                 '나의마음건강확인하기'는 사용자의 현재 감정 상태와 스트레스 지수를 과학적인 데이터를 기반으로 분석해주는 혁신적인 서비스입니다.
                 언제 어디서나 간편하게 자신의 마음 건강을 체크하고 맞춤형 솔루션을 제공받으세요.
             </p>
-        </section>
-
-        <section id="promo">
-            <h2>🎬 홍보 영상</h2>
+            
+            <h3 style="margin-top: 2.5rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem;">🎬 홍보 영상</h3>
             <p>서비스의 핵심 가치를 담은 홍보 영상을 만나보세요.</p>
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZoiEnwZHiWc?si=DNQkccID65GKtif4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </section>
-
-        <section id="demo">
-            <h2>📱 서비스 이미지 및 시연 영상</h2>
-            
-            <h3>서비스 주요 화면</h3>
-            <p>서비스의 직관적이고 사용자 친화적인 UI를 확인해보세요.</p>
-            <img src="https://via.placeholder.com/800x450.png?text=Service+Screenshot+1" alt="서비스 메인 화면 예시">
-            <img src="https://via.placeholder.com/800x450.png?text=Service+Screenshot+2" alt="서비스 분석 결과 화면 예시">
-
-            <h3 style="margin-top: 2rem;">서비스 시연 영상</h3>
-            <div class="vertical-video-with-text">
-                <div class="video-wrapper">
-                    <iframe 
-                        src="https://www.youtube.com/embed/XrS5WrDWOCc?si=0rf4HzH-PXKYPLP6" 
-                        title="나의마음건강확인하기 시연 영상" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="text-content">
-                    <p>
-                        '나의마음건강확인하기' 서비스의 실제 작동 과정을 시연 영상을 통해 확인해보세요. 
-                        앱 실행부터 감정 분석 결과 확인까지의 전 과정을 상세하게 담았습니다.
-                    </p>
-                    <p>
-                        영상을 보시면, 사용자가 어떻게 텍스트를 입력하고, AI가 이를 분석하여 어떤 피드백을 주는지 명확하게 이해하실 수 있을 것입니다. 
-                        간편한 인터페이스와 신속한 분석 속도가 본 서비스의 강점입니다.
-                    </p>
-                    <ul>
-                        <li>모바일 환경에 최적화된 UX</li>
-                        <li>간단한 입력으로 즉시 분석</li>
-                        <li>직관적인 결과 시각화</li>
-                    </ul>
-                </div>
             </div>
         </section>
 
@@ -268,43 +227,10 @@
             </ul>
         </section>
 
-        <section id="tech">
-            <h2>⚙️ 기술적인 설명</h2>
-            <p>
-                본 서비스는 최신 **자연어 처리(NLP)** 기술과 **컴퓨터 비전** 기술을 활용한 복합 AI 모델을 기반으로 합니다. 
-                사용자 데이터는 **AES-256 암호화**를 통해 안전하게 관리되며, 
-                머신러닝 알고리즘이 지속적으로 학습하여 분석의 정확도를 높여나갑니다.
-            </p>
-            <ul>
-                <li><strong>Frontend:</strong> HTML, CSS, JavaScript (React/Vue 등)</li>
-                <li><strong>Backend:</strong> Python (Django/Flask), Node.js</li>
-                <li><strong>AI/ML:</strong> TensorFlow, PyTorch, Scikit-learn</li>
-                <li><strong>Database:</strong> PostgreSQL, MongoDB</li>
-                <li><strong>Cloud:</strong> AWS / Google Cloud Platform</li>
-            </ul>
-        </section>
-
-        <section id="benefits">
-            <h2>📈 기대효과</h2>
-            <p>본 서비스를 통해 사용자는 다음과 같은 긍정적인 변화를 기대할 수 있습니다.</p>
-            <ul>
-                <li>
-                    자신의 감정 상태를 객관적으로 파악하고 스스로 관리할 수 있는 능력을 향상시킵니다.
-                </li>
-                <li>
-                    스트레스를 조기에 발견하고 적절한 대응을 통해 정신 건강 악화를 예방합니다.
-                </li>
-                <li>
-                    일상 속에서 간편하게 심리적 안정감을 찾고 삶의 질을 높일 수 있습니다.
-                </li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 [여기에 회사명 또는 팀 이름 입력]. All Rights Reserved.</p>
-        <p>본 서비스는 의료적 진단이나 처방을 대체할 수 없습니다.</p>
-    </footer>
-
-</body>
-</html>
+        <section id="demo">
+            <h2>📱 서비스 이미지 및 시연 영상</h2>
+            
+            <h3>서비스 주요 화면</h3>
+            <p>서비스의 직관적이고 사용자 친화적인 UI를 확인해보세요.</p>
+            <img src="https://via.placeholder.com/800x450.png?text=Service+Screenshot+1" alt="서비스 메인 화면 예시">
+            <img src="
